@@ -4,7 +4,7 @@
     <!-- ══ HERO ══ -->
     <section class="page-hero">
       <div class="page-hero-content">
-        <p class="section-label">The Author</p>
+        <p class="section-label">Instruction in Classical Arabic</p>
         <h1 class="section-title">About Omar</h1>
         <div class="section-rule"></div>
       </div>
@@ -16,32 +16,27 @@
 
         <div class="about-text">
 
+          
           <div class="bio-block">
             <p class="bio-opening">
-              Peter Omar Kovacik is a scholar and teacher of Classical Arabic, with a focus on Arabic Linguistics, Islamic Studies, and the transmission of the classical scholarly tradition.
+              Omar is an instructor of Classical Arabic with experience in teaching, curriculum design, lesson planning, and instructional technology.
             </p>
           </div>
+          
 
           <div class="bio-block">
             <h2 class="bio-heading">Background</h2>
             <p>
-              <!-- Add your biographical background here -->
-              Lorem ipsum — replace this paragraph with your own background: where you studied, with whom, and what drew you to Classical Arabic and Islamic scholarship.
+             
+              Omar began his Arabic studies at Qasid Institute in 2005. Since then, he has studied at SunniPath, Qibla, Toronto Shariah Program, private lessons, Fayda Institute, Dar al-Rayyan, and other programs. He has a bachelor's degree in Linguistics from the University of Wisconsin-Milwaukee, certificates in Teaching English as a Foreign Language from the Wisconsin ESL Institute, and has nearly completed a Master of Arts in Islamic Studies with a concentration in the Islamic Sciences from The Islamic Seminary of America (TISA).
             </p>
           </div>
 
           <div class="bio-block">
             <h2 class="bio-heading">Scholarly Interests</h2>
             <p>
-              <!-- Add your scholarly interests here -->
-              His scholarly interests include Arabic morphology and syntax, Quranic linguistics, the history of the Arabic grammatical tradition, and the methodology of classical Islamic scholarship.
-            </p>
-          </div>
-
-          <div class="bio-block">
-            <h2 class="bio-heading">This Journal</h2>
-            <p>
-              This journal is a space for extended reflection on topics in Arabic linguistics, Islamic studies, and the craft of teaching Classical Arabic. It is written for students, researchers, and anyone with a serious interest in the Arabic language and its intellectual tradition.
+             
+              His scholarly interests include Arabic Linguistics, Islamic education, and  the methodology of traditional Islamic scholarship.
             </p>
           </div>
 

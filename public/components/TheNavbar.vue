@@ -12,9 +12,7 @@
       </button>
 
       <div class="nav-menu" :class="{ open: menuOpen }">
-        <NuxtLink to="/" @click="close">Home</NuxtLink>
-        <NuxtLink to="/courses" @click="close">Student Portal</NuxtLink>
-        <NuxtLink to="/about" @click="close">About</NuxtLink>
+        <NuxtLink to="/courses" @click="close">Courses</NuxtLink>
         <NuxtLink to="/contact" @click="close">Contact</NuxtLink>
         <UserButton v-if="isSignedIn" />
         <a v-else href="https://concrete-lion-78.accounts.dev/sign-in" class="nav-signin">Sign In</a>

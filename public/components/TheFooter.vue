@@ -3,9 +3,7 @@
     <img src="/images/logo-white-dark-bg.png" alt="Classical Arabic with Omar" class="footer-logo-img" />
     <span class="ornament">✦ ✦ ✦</span>
     <nav class="footer-links">
-      <NuxtLink to="/" @click="close">Home</NuxtLink>
-      <NuxtLink to="/courses">Student Portal</NuxtLink>
-      <NuxtLink to="/about">About</NuxtLink>
+      <NuxtLink to="/courses">Courses</NuxtLink>
       <NuxtLink to="/contact">Contact</NuxtLink>
     </nav>
     <p class="footer-copy">&copy; {{ year }} Peter Omar Kovacik. All rights reserved.</p>
