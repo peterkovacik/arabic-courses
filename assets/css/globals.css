@@ -1,0 +1,143 @@
+/* ─────────────────────────────────────────────
+   globals.css
+   Import this once in main.js:
+     import '@/styles/globals.css'
+   ───────────────────────────────────────────── */
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=IM+Fell+English:ital@0;1&family=Cinzel:wght@400;600&display=swap');
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+/* ── DESIGN TOKENS
+   Consolidated from all five course flyers:
+   — Background: warm cream #f7f8f2 (consistent across all flyers)
+   — Dark sections: deep forest #2b3d1a (olive/green flyer borders)
+   — Accent: forest green #58704a (the "ARABIC" headline across all flyers)
+   — Secondary dark: deep plum #492e37 (fig flyer border, used sparingly)
+   — Body text: dark charcoal brown
+─────────────────────────────────────────── */
+:root {
+  /* Dark / structural — deep forest green from olive flyers */
+  --charcoal:   #2b3d1a;   /* deep forest — nav, footer, dark sections */
+  --slate:      #3a5222;   /* mid forest green */
+  --steel:      #4a5e35;   /* muted olive for body text on dark */
+  --silver:     #a8b99a;   /* sage for subdued text on dark */
+
+  /* Light backgrounds — warm cream from all flyers */
+  --fog:        #edeee8;   /* warm parchment — light section backgrounds */
+  --white:      #f4f5ef;   /* off-white — page background */
+  --pure:       #f7f8f2;   /* exact flyer background cream — cards & hero */
+
+  /* Accent — forest green "ARABIC" headline colour */
+  --teal:       #58704a;   /* forest green — primary accent, buttons, borders */
+  --teal-light: #6e8a5d;   /* lighter sage — hover state */
+  --teal-pale:  #e8ede3;   /* pale green tint — success bg, highlights */
+
+  /* Plum — from fig flyers, used for decorative accents */
+  --plum:       #492e37;
+  --plum-light: #6b4550;
+
+  /* Gold highlights */
+  --gold:       #b8952a;   /* warm antique gold */
+  --gold-light: #d4ae4a;   /* lighter gold for hover / glow */
+  --gold-pale:  #f5edcc;   /* pale gold tint for subtle bg highlights */
+
+  --rule:       #d4d8cc;   /* warm grey-green border */
+  --shadow:     rgba(43,61,26,0.12);
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  background: var(--white);
+  color: var(--charcoal);
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+/* ── SHARED UTILITIES ── */
+.ornament {
+  display: block;
+  text-align: center;
+  color: var(--gold);           /* gold ornamental dividers */
+  font-size: 1.1rem;
+  letter-spacing: 0.3em;
+  margin: 0.5rem 0;
+  opacity: 0.85;
+}
+
+.btn {
+  display: inline-block;
+  font-family: 'Cinzel', serif;
+  font-size: 0.72rem;
+  letter-spacing: 0.15em;
+  text-decoration: none;
+  padding: 0.85rem 2rem;
+  border: 1.5px solid var(--teal);
+  color: var(--teal);
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.25s;
+  white-space: nowrap;
+}
+.btn:hover {
+  background: var(--teal);
+  color: var(--pure);
+  border-color: var(--teal);
+  box-shadow: 0 0 0 2px var(--gold-pale); /* gold glow on hover */
+}
+
+.btn-filled { background: var(--teal); color: var(--pure); }
+.btn-filled:hover {
+  background: var(--teal-light);
+  border-color: var(--teal-light);
+  box-shadow: 0 0 0 2px var(--gold-pale);
+}
+
+/* ── SHARED SECTION STYLES ── */
+.section-inner { max-width: 1140px; margin: 0 auto; }
+
+.section-label {
+  font-family: 'Cinzel', serif;
+  font-size: 0.65rem;
+  letter-spacing: 0.25em;
+  color: var(--teal);
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 0.4rem;
+}
+.section-label.on-dark { color: var(--gold-light); } /* gold labels on dark sections */
+
+.section-title {
+  font-family: 'IM Fell English', serif;
+  font-size: clamp(1.8rem, 5vw, 2.8rem);
+  font-weight: 400;
+  text-align: center;
+  color: var(--charcoal);
+  line-height: 1.2;
+  margin-bottom: 0.5rem;
+}
+.section-title.on-dark { color: var(--fog); }
+
+.section-rule {
+  width: 50px;
+  height: 1.5px;
+  background: var(--teal);
+  margin: 0.8rem auto 2rem;
+}
+.section-rule.on-dark { background: var(--gold); } /* gold rule on dark sections */
+
+.section-cta { text-align: center; margin-top: 2.5rem; }
+
+.course-link {
+  font-family: 'Cinzel', serif;
+  font-size: 0.65rem;
+  letter-spacing: 0.15em;
+  color: var(--teal);
+  text-decoration: none;
+  border-bottom: 1px solid var(--teal);
+  padding-bottom: 1px;
+  transition: color 0.2s, border-color 0.2s;
+}
+.course-link:hover { color: var(--gold); border-color: var(--gold); } /* gold on hover */

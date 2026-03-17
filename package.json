@@ -1,0 +1,25 @@
+{
+  "name": "arabicwithomar",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev --host 0.0.0.0",
+    "dev:cms": "concurrently \"nuxt dev --host 0.0.0.0\" \"decap-server\"",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "dependencies": {
+    "@clerk/nuxt": "^2.0.4",
+    "@nuxt/content": "^2.13.4",
+    "nuxt": "^3.14.0",
+    "vue": "^3.5.13",
+    "vue-router": "^4.4.5"
+  },
+  "devDependencies": {
+    "@nuxt/devtools": "latest",
+    "concurrently": "^9.0.0",
+    "decap-server": "^3.0.0"
+  }
+}
