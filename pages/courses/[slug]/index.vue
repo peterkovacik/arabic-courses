@@ -62,7 +62,7 @@ onMounted(async () => {
     window.location.href = 'https://accounts.arabicwithomar.com/sign-in'
   }
 })
-
+</script>
 <style scoped>
 .page-hero {
   background: var(--pure);
