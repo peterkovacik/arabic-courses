@@ -129,6 +129,10 @@ onMounted(async () => {
   margin-bottom: 0.75rem;
   margin-top: 2rem;
 }
+.lesson-content :deep(h2 a) {
+  color: var(--gold);
+  text-decoration: none;
+}
 .lesson-content :deep(h2:first-child) { margin-top: 0; }
 .lesson-content :deep(p) {
   font-size: 0.95rem;
