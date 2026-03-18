@@ -130,7 +130,7 @@ onMounted(async () => {
   margin-top: 2rem;
 }
 .lesson-content :deep(h2 a) {
-  color: var(--gold);
+  color: var(--charcoal);
   text-decoration: none;
 }
 .lesson-content :deep(h2:first-child) { margin-top: 0; }
