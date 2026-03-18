@@ -17,7 +17,8 @@
         <NuxtLink to="/about" @click="close">About</NuxtLink>
         <NuxtLink to="/contact" @click="close">Contact</NuxtLink>
         <UserButton v-if="isSignedIn" />
-        <NuxtLink v-else to="/sign-in" class="nav-signin">Sign In</NuxtLink>
+        <a v-else href="https://accounts.arabicwithomar.com/sign-in" class="nav-signin">Sign In</a>
+
       </div>
     </div>
   </nav>
