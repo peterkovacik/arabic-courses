@@ -28,7 +28,10 @@
             <h2 class="bio-heading">Background</h2>
             <p>
              
-              Omar began his Arabic studies at Qasid Institute in 2005. Since then, he has studied at SunniPath, Qibla, Toronto Shariah Program, Studio Arabiyyah, Sibawayh Center, private lessons with Shaykh Syed Javed Ali Shah, Seeker's Guidance, Fayda Institute, Dar al-Rayyan, and other programs. He has a bachelor's degree in Linguistics from the University of Wisconsin-Milwaukee, certificates in Teaching English as a Foreign Language from the Wisconsin ESL Institute, and has nearly completed a Master of Arts in Islamic Studies with a concentration in the Islamic Sciences from The Islamic Seminary of America (TISA).
+              Omar began his Arabic studies at Qasid Institute in 2005. Since then, he has studied at SunniPath, Qibla, Toronto Shariah Program, Studio Arabiyyah, Sibawayh Center, private lessons with Shaykh Syed Javed Ali Shah, Seeker's Guidance, Fayda Institute, Dar al-Rayyan, and other programs. 
+            </p>
+            <p>  
+              He has a bachelor's degree in Linguistics from the University of Wisconsin-Milwaukee, certificates in Teaching English as a Foreign Language from the Wisconsin ESL Institute, and has nearly completed a Master of Arts in Islamic Studies with a concentration in the Islamic Sciences from The Islamic Seminary of America (TISA).
             </p>
           </div>
 

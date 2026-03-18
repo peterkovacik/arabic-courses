@@ -4,7 +4,7 @@
       <div class="page-hero-content">
         <h1 class="section-title">Get in Touch</h1>
         <div class="section-rule"></div>
-        <p class="page-hero-sub">For enquiries, correspondence, or responses to articles.</p>
+        <p class="page-hero-sub">For enquiries or correspondence</p>
       </div>
     </section>
 
