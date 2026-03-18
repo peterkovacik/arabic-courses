@@ -1,6 +1,6 @@
 ---
-title: Step Two 
-excerpt: Keys to Classical Arabic
+title: Matn al-Ajurrumiyyah 
+excerpt: Foundations of Classical Arabic
 level: Intermediate
 order: 2
 ---
