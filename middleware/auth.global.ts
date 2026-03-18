@@ -5,10 +5,11 @@ export default defineNuxtRouteMiddleware(async (to) => {
 
   // Wait for Clerk to finish loading
   if (!isLoaded.value) {
-    await until(isLoaded).toBe(true)
+    await new Promise(resolve => setTimeout(resolve, 500))
   }
 
-  if (to.path.startsWith('/courses') && !userId.value) {
+  // Double check after waiting
+  if (to.path.startsWith('/courses') && !userId.value && isLoaded.value) {
     return navigateTo('https://accounts.arabicwithomar.com/sign-in', { external: true })
   }
 })
