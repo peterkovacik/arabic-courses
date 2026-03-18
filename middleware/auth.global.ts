@@ -1,7 +1,9 @@
 export default defineNuxtRouteMiddleware((to) => {
+  // Only run on client side — avoids SSG/prerender issues
+  if (import.meta.server) return
+
   const { userId, isLoaded } = useAuth()
 
-  // Wait until Clerk has loaded before checking auth
   if (!isLoaded.value) return
 
   if (to.path.startsWith('/courses') && !userId.value) {
