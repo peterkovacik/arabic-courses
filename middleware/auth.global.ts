@@ -1,10 +1,12 @@
-export default defineNuxtRouteMiddleware((to) => {
-  // Only run on client side — avoids SSG/prerender issues
+export default defineNuxtRouteMiddleware(async (to) => {
   if (import.meta.server) return
 
   const { userId, isLoaded } = useAuth()
 
-  if (!isLoaded.value) return
+  // Wait for Clerk to finish loading
+  if (!isLoaded.value) {
+    await until(isLoaded).toBe(true)
+  }
 
   if (to.path.startsWith('/courses') && !userId.value) {
     return navigateTo('https://accounts.arabicwithomar.com/sign-in', { external: true })
