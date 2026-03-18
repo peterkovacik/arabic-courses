@@ -16,13 +16,13 @@
 
         <div class="about-text">
 
-          
+          <!--
           <div class="bio-block">
             <p class="bio-opening">
               Omar is an instructor of Classical Arabic with experience in teaching, curriculum design, lesson planning, and instructional technology.
             </p>
           </div>
-          
+          -->
 
           <div class="bio-block">
             <h2 class="bio-heading">Background</h2>
