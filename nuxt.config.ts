@@ -4,6 +4,12 @@ export default defineNuxtConfig({
 
   modules: ['@nuxt/content', '@clerk/nuxt'],
 
+  clerk: {
+    signInUrl: '/sign-in',
+    afterSignInUrl: '/courses',
+    afterSignUpUrl: '/courses',
+  },
+
   content: {
     highlight: { theme: 'github-light' },
     markdown: { toc: { depth: 3 } }
