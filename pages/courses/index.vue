@@ -33,6 +33,8 @@
 </template>
 
 <script setup>
+import { until } from '@vueuse/core'
+
 useSeoMeta({
   title: 'Courses | Classical Arabic with Omar',
   description: 'Structured courses in Classical Arabic and Islamic Studies.',
@@ -44,6 +46,14 @@ const { data: courses } = await useAsyncData('courses', () =>
     .sort({ order: 1 })
     .find()
 )
+
+onMounted(async () => {
+  const { userId, isLoaded } = useAuth()
+  await until(isLoaded).toBe(true)
+  if (!userId.value) {
+    window.location.href = 'https://accounts.arabicwithomar.com/sign-in'
+  }
+})
 </script>
 
 <style scoped>

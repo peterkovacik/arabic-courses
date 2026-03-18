@@ -69,6 +69,14 @@ useSeoMeta({
   title: `${lesson.value?.title} | Classical Arabic with Omar`,
   description: lesson.value?.excerpt,
 })
+
+onMounted(async () => {
+  const { userId, isLoaded } = useAuth()
+  await until(isLoaded).toBe(true)
+  if (!userId.value) {
+    window.location.href = 'https://accounts.arabicwithomar.com/sign-in'
+  }
+})
 </script>
 
 <style scoped>

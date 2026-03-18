@@ -30,6 +30,8 @@
 </template>
 
 <script setup>
+import { until } from '@vueuse/core'
+
 const route = useRoute()
 const slug = route.params.slug
 
@@ -49,6 +51,14 @@ const { data: lessons } = await useAsyncData(`lessons-${slug}`, () =>
 useSeoMeta({
   title: `${course.value?.title} | Classical Arabic with Omar`,
   description: course.value?.excerpt,
+})
+
+onMounted(async () => {
+  const { userId, isLoaded } = useAuth()
+  await until(isLoaded).toBe(true)
+  if (!userId.value) {
+    window.location.href = 'https://accounts.arabicwithomar.com/sign-in'
+  }
 })
 </script>
 
