@@ -1,15 +1,24 @@
-export default defineNuxtRouteMiddleware(async (to) => {
+export default defineNuxtRouteMiddleware((to) => {
   if (import.meta.server) return
+
+  if (!to.path.startsWith('/courses')) return
 
   const { userId, isLoaded } = useAuth()
 
-  // Wait for Clerk to finish loading
-  if (!isLoaded.value) {
-    await new Promise(resolve => setTimeout(resolve, 500))
+  // If already loaded and no user, redirect immediately
+  if (isLoaded.value && !userId.value) {
+    return navigateTo('https://accounts.arabicwithomar.com/sign-in', { external: true })
   }
 
-  // Double check after waiting
-  if (to.path.startsWith('/courses') && !userId.value && isLoaded.value) {
-    return navigateTo('https://accounts.arabicwithomar.com/sign-in', { external: true })
+  // If not yet loaded, watch and only redirect if still no user after loading
+  if (!isLoaded.value) {
+    const unwatch = watch(isLoaded, (loaded) => {
+      if (loaded) {
+        unwatch()
+        if (!userId.value) {
+          navigateTo('https://accounts.arabicwithomar.com/sign-in', { external: true })
+        }
+      }
+    })
   }
 })
