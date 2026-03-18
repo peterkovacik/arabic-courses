@@ -56,11 +56,12 @@ useSeoMeta({
 onMounted(async () => {
   const { userId, isLoaded } = useAuth()
   await until(isLoaded).toBe(true)
+  console.log('isLoaded:', isLoaded.value)
+  console.log('userId:', userId.value)
   if (!userId.value) {
     window.location.href = 'https://accounts.arabicwithomar.com/sign-in'
   }
 })
-</script>
 
 <style scoped>
 .page-hero {
