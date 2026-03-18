@@ -49,6 +49,11 @@ const { data: courses } = await useAsyncData('courses', () =>
 
 onMounted(async () => {
   const { userId, isLoaded } = useAuth()
+
+  // If Clerk is still completing its handshake, don't check yet
+  const params = new URLSearchParams(window.location.search)
+  if (params.has('__clerk_handshake') || params.has('__clerk_db_jwt')) return
+
   await until(isLoaded).toBe(true)
   if (!userId.value) {
     window.location.href = 'https://accounts.arabicwithomar.com/sign-in'
