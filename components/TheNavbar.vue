@@ -17,7 +17,7 @@
         <NuxtLink to="/about" @click="close">About</NuxtLink>
         <NuxtLink to="/contact" @click="close">Contact</NuxtLink>
         <UserButton v-if="isSignedIn" />
-        <a v-else href="https://concrete-lion-78.accounts.dev/sign-in" class="nav-signin">Sign In</a>
+        <a v-else href="/sign-in" class="nav-signin">Sign In</a>
       </div>
     </div>
   </nav>
