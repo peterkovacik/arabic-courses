@@ -5,10 +5,6 @@ order: 2
 video: https://drive.google.com/file/d/1rvvDc4-qCdPm-jihj4Z5rt6SgJMkOfR7/view?usp=drive_link
 
 
-resources:
-  - title: Lesson One PDF
-    url: https://drive.google.com/file/d/1Ztu4tqy-EPwHb69WHabiwFNAUNBHl228/view?usp=sharing
-
 ---
 
 ## Description
