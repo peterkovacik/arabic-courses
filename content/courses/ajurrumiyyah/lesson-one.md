@@ -19,4 +19,3 @@ Write your lesson description here. This can be as long as you like and supports
 
 Add any additional notes, tips, or references for students here.
 
--->
