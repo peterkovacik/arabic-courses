@@ -2,7 +2,7 @@
 title: Lesson One
 excerpt: A brief description of lesson one.
 order: 2
-video: https://drive.google.com/file/d/1rvvDc4-qCdPm-jihj4Z5rt6SgJMkOfR7/view?usp=sharing
+video: https://drive.google.com/file/d/1rvvDc4-qCdPm-jihj4Z5rt6SgJMkOfR7/preview
 
 resources:
   - title: Lesson One - al-Ajurrumiyyah 
