@@ -10,5 +10,5 @@ resources:
 
 ## Description
 
-al-Ajurrumiyyah (Arabic Text)
+Download al-Ajurrumiyyah (Arabic Text)
 
