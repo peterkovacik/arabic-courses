@@ -14,5 +14,5 @@ resources:
 
 ## Description
 
-Download al-Ajurrumiyyah (Arabic Text)
+Download the matn of al-Ajurrumiyyah (Arabic Text), its English translation, and it commentary Tuhfat al-Saniyyah.
 
