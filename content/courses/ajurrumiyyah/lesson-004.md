@@ -1,7 +1,7 @@
 ---
 title: Lesson 4
 excerpt: A brief description of lesson one.
-order: 005
+order: 5
 video: https://drive.google.com/file/d/18tYdpnoy2sQ3CCWxVpnsH11pOIR7b3g3/preview
 
 ---

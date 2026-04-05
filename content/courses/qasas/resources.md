@@ -1,7 +1,7 @@
 ---
 title: Resources
 excerpt: Qasas al-Nabiyyeen downloads
-order: 001
+order: 1
 
 resources:
   - title: Qasas al-Nabiyyeen vol. 1

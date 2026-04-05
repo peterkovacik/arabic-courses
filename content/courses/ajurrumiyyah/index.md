@@ -2,5 +2,5 @@
 title: Matn al-Ajurrumiyyah 
 excerpt: Foundations of Classical Arabic
 level: Intermediate
-order: 001
+order: 1
 ---

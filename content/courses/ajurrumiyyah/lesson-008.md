@@ -1,7 +1,7 @@
 ---
 title: Lesson 8
 excerpt: A brief description of lesson one.
-order: 009
+order: 9
 video: https://drive.google.com/file/d/1x0ZExG4dTF8HAHhn_nmGhio1EyoVQ85o/preview
 
 ---
