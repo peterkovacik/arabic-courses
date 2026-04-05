@@ -1,7 +1,7 @@
 ---
 title: Lesson 9
 excerpt: A brief description of the lesson.
-order: 10
+order: 9
 video: https://drive.google.com/file/d/1s4dUcvG-5YmiAhoWE22GXXN3-3UrXAtV/preview
 ---
 
