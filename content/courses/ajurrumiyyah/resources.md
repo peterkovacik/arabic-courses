@@ -1,7 +1,7 @@
 ---
 title: Resources
 excerpt: A brief description of lesson one.
-order: 1
+order: 0
 resources:
   - title: Matn al-Ajurrumiyyah (Arabic Text)
     url: https://drive.google.com/file/d/1qh8LTVQM5iB_zhj9NugUrVwiGQAgkVYy/view
