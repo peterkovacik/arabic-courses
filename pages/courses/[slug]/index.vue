@@ -44,7 +44,7 @@ const { data: course } = await useAsyncData(`course-${slug}`, () =>
 const { data: lessons } = await useAsyncData(`lessons-${slug}`, () =>
   queryContent('courses', slug)
     .where({ _file: { $ne: `courses/${slug}/index.md` } })
-    .sort({ order: 1 })
+    .sort({ order: 1, $numeric: true })
     .find()
 )
 
